@@ -8,6 +8,21 @@ Conectar el dispositivo Wifi LoRa 32 de heltec con el gateway usando protocolo O
 
 ---
 
+### [2025-10-25] [15:07] - [DECISION] Instalación de android IDE para pc de casa
+
+**Acción:** Redactar limpieza e instalación de android IDE para programar placa LoRa 32 de Heltec
+
+**Racional:** Poder conectar gateway con un dispositivo controlado
+
+**Cambios:**
+*   `./Instalacion_arduino_LoRa.txt` - Archivo de texto que describe las instrucciones que seguí para limpiar e instalar nuevamente android IDE
+
+**Contexto/Notas:**  <!-- Commit: [a1b2c3d](link-to-commit) --> 
+
+---
+
+---
+
 ### [2025-10-24] [07:30] - [FEATURE] Links base
 
 **Acción:** Dejo registro de links necesarios o base en los cuales me baso para programar dispositivo wifi lora 32 de heltec
