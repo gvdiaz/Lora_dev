@@ -4,6 +4,8 @@ Colección de links útiles para el proyecto
 
 ## Table of Contents
 - [Documentación Heltec](#documentacion-heltec)
+- [Links de desarrollo](#desarrollo)
+- [Documentación Gateway](#documentacion-sensecap-m2)
 <!--- [Tutorials & Guides](#tutorials--guides)
 - [Tools & Libraries](#tools--libraries)
 - [Inspiration & Examples](#inspiration--examples)
@@ -13,7 +15,7 @@ Colección de links útiles para el proyecto
 
 ## Documentacion Heltec
 
-| Resource | Description | Racional | Fecha de agregado |
+| Resource | Descripcion | Racional | Fecha de agregado |
 |----------|-------------|-------------------|------------|
 | [Link Oficial wifi lora 32](https://heltec.org/project/wifi-lora-32-v3/) | Registro oficial de dispositivo | Utilizar herramientas oficales para programación | 2025-10-24 |
 | [Framework ESP32](https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series) | Marco de desarrollo ESP32 | Recurso necesario para programación de ESP32 | 2025-10-24 |
@@ -25,6 +27,14 @@ Colección de links útiles para el proyecto
 | Resource | Description | Key Takeaways | Status |
 |----------|-------------|----------------|---------|
 | [Repo github](https://github.com/gvdiaz/Lora_dev) | Repo de proyecto actual | Repo para registro de actividades y desarrollo | Implemented |
+
+## Documentacion sensecap M2
+| Resource | Descripcion | Racional | Fecha de agregado |
+|----------|-------------|----------|-------------------|
+| [Uso LNS](https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration/) | Configuración general de gateway como Local network server | Confiugración aplicada a gateway | 2025-10-24 |
+| [Configuración general de gateway](http://192.168.0.56/cgi-bin/luci/) | Dirección para configurar generalmente al gateway | acceder rápidamente a la configuración del dispositivo | 2025-10-24 |
+| [Configuración Chirpstack de gateway](http://192.168.0.56:8080/) | Acceso a chirpstack de gateway | Necesario para verificar detección de dispositivos y su configuración | 2025-10-24 | 
+
 <!--## Tutorials & Guides
 
 | Resource | Description | Key Takeaways | Status |
