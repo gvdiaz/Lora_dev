@@ -4,7 +4,40 @@
 Conectar el dispositivo Wifi LoRa 32 de heltec con el gateway usando protocolo OTAA (over the air activation)
 
 #### Tipos de logs
-[BUGFIX], [FEATURE], [REFACTOR], [HOTFIX], [DEPLOY], [DECISION]
+[BUGFIX], [FEATURE], [REFACTOR], [HOTFIX], [DEPLOY], [DECISION], [TEST]
+
+---
+
+### [2025-10-30] [06:26] - [DECISION] Lectura de documentación para poder repotar variables en gateway SenseCAP
+
+**Acción:** Lograr enviar y visualizar variables a gateway SenseCAP
+
+**Racional:** Habiendo podido activar el módulo en el gateway con las credenciales devEUI y APPkey continuo leyendo documentación de Heltec para lograr reportar variables cada una hora
+
+**Cambios:**
+*   `ningún nombre por el momento` - Descripción de archivo
+
+**Contexto/Notas:**
+
+[Docs generales de módulo Heltec](https://docs.heltec.org/general/index.html) <!-- Commit: [a1b2c3d](link-to-commit) --> 
+
+---
+
+---
+
+### [2025-1030] [06:00] - [TEST] Comunicación entre gateway y nodo HELTEC
+
+**Acción:** Registro de activación de nodo Heltec en gateway SenseCAP
+
+**Racional:** El día de ayer pude activar el nodo HELTEC en el gateway SenseCAP. Por el momento solo se pudo activar. Lo posterior sería reportar alguna variable y visualizarla a través del gateway.
+
+**Cambios:**
+*   `./Scripts/LoRaWAN_arduino.ino` - Archivo base para probar activación con gateway -> Probada exitosamente el 29/10/2025
+
+**Contexto/Notas:** 
+[Link a sketch base](https://github.com/HelTecAutomation/Heltec_ESP32/blob/master/examples/LoRaWAN/LoRaWanOLED/LoRaWanOLED.ino)
+
+---
 
 ---
 
