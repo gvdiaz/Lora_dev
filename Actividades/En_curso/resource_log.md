@@ -21,6 +21,8 @@ Colección de links útiles para el proyecto
 | [Framework ESP32](https://github.com/Heltec-Aaron-Lee/WiFi_Kit_series) | Marco de desarrollo ESP32 | Recurso necesario para programación de ESP32 | 2025-10-24 |
 | [Documentacion oficial Heltec](https://docs.heltec.org/en/node/esp32/wifi_lora_32/index.html) | Documentación oficial wifi lora 32 V3 | Lugar oficial donde indica instación y primeros pasos con dispositivo | 2025-10-24 |
 | [Parámetros de sistema LoRaWAN](https://docs.heltec.org/general/lorawan_parameters.html) | Descripción de parámetros necesarios para setear configuración de módulo | Dejar constancia de parámetros que se pueden modificar en módulo como DevEUI, región, nivel debug y varias cosas más | 2025-10-30 |
+| [Definición de región por país](https://docs.heltec.org/general/lorawan_frequency_plans_by_country.html) | Definición de Frecuency Plan por país | Necesario para requerir banda de equipos con los cuales trabajar | 2025-10-30 |
+| [nombre link](link propiamente dicho) | descripción | racional | fecha |
 <!-- | [nombre link](link propiamente dicho) | descripción | racional | fecha | -->
 
 ## Desarrollo
