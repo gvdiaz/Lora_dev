@@ -8,6 +8,21 @@ Conectar el dispositivo Wifi LoRa 32 de heltec con el gateway usando protocolo O
 
 ---
 
+### [2025-10-31] [06:24] - [DECISION] Creación de archivo de referencia para métodos y definiciones de Heltec LoRa 32
+
+**Acción:** DRecopilo en un solo archivo la descripción de variables y funciones que voy a necesitar para generar la lectura de datos por parte del gateway
+
+**Racional:** Todavía no investigué esta documentación para poder controlar el módulo y lograr el objetivo de reportar variables al gateway
+
+**Cambios:**
+*   `./Actividades/En_curso/LoRa_32_ref.md` - Archivo que contiene el resumen de lo que entienda en la documentación ofical de Heltec
+
+**Contexto/Notas:** [Link de fuente Heltec](https://docs.heltec.org/general/index.html) <!-- Commit: [a1b2c3d](link-to-commit) --> 
+
+---
+
+---
+
 ### [2025-10-30] [06:26] - [DECISION] Lectura de documentación para poder repotar variables en gateway SenseCAP
 
 **Acción:** Lograr enviar y visualizar variables a gateway SenseCAP
