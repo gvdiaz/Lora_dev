@@ -8,6 +8,24 @@ Conectar el dispositivo Wifi LoRa 32 de heltec con el gateway usando protocolo O
 
 ---
 
+### [2025-11-04] [06:26] - [BUGFIX] Activación de módulo y recursos de módulo Heltec LoRa 32
+
+**Acción:** Obtener y tener acceso a documentación faltante de módulo según documentación de fabricante
+
+**Racional:** Sin esto creo que no puedo conocer las bibliotecas del módulo para poder realizar la programación del envio de una variable al network server.
+
+**Cambios:**
+*   `archivo_creado/modificado` - Descripción de archivo
+
+**Contexto/Notas:** Fuentes:
+* [Get Limited Technical Resources](https://docs.heltec.org/general/view_limited_technical_data.html)
+* [Ingreso de chip id](https://resource.heltec.cn/search)
+* [Acceso a código para obtener chip id](https://docs.heltec.org/general/view_limited_technical_data.html#esp32-lora-series) <!-- Commit: [a1b2c3d](link-to-commit) --> 
+
+---
+
+---
+
 ### [2025-10-31] [06:24] - [DECISION] Creación de archivo de referencia para métodos y definiciones de Heltec LoRa 32
 
 **Acción:** DRecopilo en un solo archivo la descripción de variables y funciones que voy a necesitar para generar la lectura de datos por parte del gateway
