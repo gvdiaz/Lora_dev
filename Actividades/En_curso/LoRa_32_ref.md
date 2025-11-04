@@ -38,3 +38,25 @@ Use external 32.768 KHz crystal oscillator as the timer source, it’s more frie
 
 ### Parámetros en el código (por ejemplo en el archivo LoRaWAN_arduino.ino de la carpeta Scripts)
 
+### Lectura de chip id para acceso a recurso de Heltec LoRa 32
+
+Llegué a la página [Get Limited Technical Resources](https://docs.heltec.org/general/view_limited_technical_data.html), y encuentro que para tener acceso a todos los recursos del módulo debo ingresar el chip ID en la siguiente página [web ingreso chip id](https://resource.heltec.cn/search).
+
+En la misma me indica que para obtener el "chip id" debo seguir las instrucciones de la siguiente sección en el siguiente [link](https://docs.heltec.org/general/view_limited_technical_data.html#esp32-lora-series)
+
+En el link indicado encuentro un sketch arduino para leer el chip id el cual guardo en la carpeta de "Scripts" de este proyecto como "./Scripts/GetChipID.ino"
+
+Procedo a cargarlo en el IDE de arduino y ejecutar el código para leer dicho chip id,
+
+1. Bajo código del siguiente [link](https://github.com/HelTecAutomation/Heltec_ESP32/tree/master/examples/ESP32/GetChipID)
+2. Cargo código en IDE de arduino
+3. Compilo código
+4. Cargo código a módulo
+5. Leo puerto serie con el "serial monitor" en la opción de "Tools" de IDE.
+6. Me devuelve la siguiente cadena,
+´´´
+This chip has 2 cores
+ESP32ChipID=6491A09E139C
+ESP32 Chip model = ESP32-S3 Rev 2
+´´´
+7. Logré bajar la información y lo dejo en la pc del laburo disponible, no así en el repositorio.
