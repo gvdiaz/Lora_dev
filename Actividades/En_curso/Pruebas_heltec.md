@@ -56,3 +56,18 @@ meshtastic_wifi_lora_32_V3.zip	Meshtastic firmware - Popular LoRa mesh networkin
 ```
 OLED_TEST/LORA32_OLED (1).zip - Additional display testing tools
 ```
+
+#### Comando para habilitar pantalla
+
+* Me muevo hacia la carpeta que contiene el sketch habilitador
+```bash
+cd WiFi_LoRa_32_V3/code/Lora32_V3_factest_HF/Lora32_V3_HF/
+```
+* Antes necesito instalar esptool
+```bash
+pip3 install esptool
+```
+* Comando para habilitar pantalla (graba sketch de fábrica, aparentemente)
+```bash
+esptool --chip esp32s3 --port "/dev/ttyUSB0" --baud 921600 --before default-reset --after hard-reset write-flash -z --flash-mode keep --flash-freq keep --flash-size keep 0x0 "Lora32_V3_HF.ino.bootloader.bin" 0x8000 "Lora32_V3_HF.ino.partitions.bin" 0xe000 "boot_app0.bin" 0x10000 "Lora32_V3_HF.ino.bin"
+```
