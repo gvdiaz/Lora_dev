@@ -56,7 +56,7 @@ Procedo a cargarlo en el IDE de arduino y ejecutar el código para leer dicho ch
 6. Me devuelve la siguiente cadena,
 ´´´
 This chip has 2 cores
-ESP32ChipID=6491A09E139C
+ESP32ChipID=...
 ESP32 Chip model = ESP32-S3 Rev 2
 ´´´
 7. Logré bajar la información y lo dejo en la pc del laburo disponible, no así en el repositorio.
