@@ -4,45 +4,45 @@
 
 ### Desinstalación de arduino
 
-´´´
+```bash
 sudo apt remove arduino
 sudo apt purge arduino
-´´´
+```
 
 # Remove user configuration
 
-´´´
+```bash
 rm -rf ~/.arduino15
 rm -rf ~/.arduino-ide -> no existía
-´´´
+```
 
 # Remove local sketches and libraries (optional - backup if needed)
 
-´´´
+```bash
 rm -rf ~/Arduino
 rm -rf ~/Documents/Arduino -> no existía
-´´´
+```
 
 # Check for any remaining Arduino files
 
-´´´
+```bash
 sudo find / -name "*arduino*" -type f 2>/dev/null
-´´´
+```
 
 # Remove any leftover directories
 
-´´´
+```bash
 sudo rm -rf /opt/arduino-*
 sudo rm -rf /usr/share/arduino
-´´´
+```
 
 # Log de instalación de arduino IDE que saqué del siguiente [link](https://www.arduino.cc/en/software/)
 
 # Bajé el instalador y tuve que instalar en el sistema el siguiente paquete
 
-´´´
+```bash
 sudo apt install libfuse2
-´´´
+```
 
 # Y luego pude ejecutar el archivo que bajé (arduino-ide_2.3.6_Linux_64bit.AppImage)
 
@@ -52,7 +52,7 @@ sudo apt install libfuse2
 
 # Antes de ejecutar la instalación quise verificar la conexión con el board, es decir si la pc lo veía con el comando
 
-´´´
+```
 lsusb
 
 # Y no lo encontraba. Probé varias opciones recomendas por deepseek pero no podía verlo de ninguna manera. Hasta que me recomendó revisar el cable y cambiándolo logré poder verlo con el comando
