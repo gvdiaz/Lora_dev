@@ -85,6 +85,9 @@ ipython_config.py
 # Archivos especiales a ignorar
 Actividades/Actividades_OK/WiFi_LoRa_32_V3.zip
 
+# Carpetas especiales a ignorar
+Actividades/Actividades_OK/WiFi_LoRa_32_V3/
+
 
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
