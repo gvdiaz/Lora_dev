@@ -1,0 +1,1620 @@
+Sun Oct 12 20:45:05 2025 user.notice root: lora_pkt_fwd: Start /var/etc/global_conf.json
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: {"lora_pkt_fwd":0,"station":0}
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: *** Packet Forwarder ***
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: Version: 2.1.0
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: *** SX1302 HAL library version info ***
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: Version: 2.1.0;
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: ***
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Little endian host
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: found configuration file /var/etc/global_conf.json, parsing it
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: /var/etc/global_conf.json does contain a JSON object named SX130x_conf, parsing SX1302 parameters
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: com_type SPI, com_path /dev/spidev0.1, lorawan_public 1, clksrc 0, full_duplex 0
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: antenna_gain 3 dBi
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Configuring legacy timestamp
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Configuring Tx Gain LUT for rf_chain 0 with 27 indexes for sx1250
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: radio 0 enabled (type SX1250), center frequency 917200000, RSSI offset -213.000000, tx enabled 1, single input mode 0
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: radio 1 enabled (type SX1250), center frequency 917900000, RSSI offset -213.000000, tx enabled 0, single input mode 0
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 0>  radio 0, IF -400000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 1>  radio 0, IF -200000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 2>  radio 0, IF 0 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 3>  radio 0, IF 200000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 4>  radio 1, IF -300000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 5>  radio 1, IF -100000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 6>  radio 1, IF 100000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora multi-SF channel 7>  radio 1, IF 300000 Hz, 125 kHz bw, SF 5 to 12
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Lora std channel> radio 0, IF 300000 Hz, 500000 Hz bw, SF 8, Explicit header
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: FSK channel 8 disabled
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: /var/etc/global_conf.json does contain a JSON object named gateway_conf, parsing gateway parameters
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: gateway MAC address is configured to 2CF7F1177280004C
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: server hostname or IP address is configured to "localhost"
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: upstream port is configured to "1700"
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: downstream port is configured to "1700"
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: downstream keep-alive interval is configured to 5 seconds
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: statistics display interval is configured to 30 seconds
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: statistics report interval multiple is configured to 1
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: upstream PUSH_DATA time-out is configured to 950 ms
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: packets received with a valid CRC will be forwarded
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: packets received with a CRC error will NOT be forwarded
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: packets received with no CRC will NOT be forwarded
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Reference latitude is configured to 0.000000 deg
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Reference longitude is configured to 0.000000 deg
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Reference altitude is configured to 0 meters
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing period is configured to 0 seconds
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing signal will be emitted at 869525000 Hz
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing datarate is set to SF9
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing modulation bandwidth is set to 125000Hz
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing TX power is set to 14dBm
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Beaconing information descriptor is set to 0
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: Auto-quit after 6 non-acknowledged PULL_DATA
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: whitelist is disabled
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: /var/etc/global_conf.json does not contain a JSON object named debug_conf
+Sun Oct 12 20:45:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: no debug configuration
+Sun Oct 12 20:45:09 2025 daemon.info lora_pkt_fwd[5731]: GPS power enable through GPIO482...
+Sun Oct 12 20:45:09 2025 daemon.info lora_pkt_fwd[5731]: CoreCell power enable through GPIO483...
+Sun Oct 12 20:45:09 2025 daemon.info lora_pkt_fwd[5731]: CoreCell reset through GPIO494...
+Sun Oct 12 20:45:09 2025 daemon.info lora_pkt_fwd[5731]: SX1261 reset through GPIO495...
+Sun Oct 12 20:45:10 2025 daemon.info lora_pkt_fwd[5731]: Opening SPI communication interface
+Sun Oct 12 20:45:10 2025 daemon.info lora_pkt_fwd[5731]: Note: chip version is 0x10 (v1.0)
+Thu Nov  6 21:57:35 2025 daemon.info lora_pkt_fwd[5731]: INFO: using legacy timestamp
+Thu Nov  6 21:57:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: LoRa Service modem: configuring preamble size to 8 symbols
+Thu Nov  6 21:57:37 2025 daemon.info lora_pkt_fwd[5731]: ARB: dual demodulation disabled for all SF
+Thu Nov  6 21:57:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: found temperature sensor on port 0x39
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1}
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [main] concentrator started, packet can now be received
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: concentrator EUI: 0x0016c001f10664e7
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: DEBUG: [socket] Creating sock_up
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [socket] Socket up Ready, sock_up_counter = 1
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: DEBUG: [socket] Creating sock_down
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [socket] Socket down Ready, sock_down_counter = 1
+Thu Nov  6 21:57:38 2025 daemon.info lora_pkt_fwd[5731]: {"lora_pkt_fwd":1,"station":0}
+Thu Nov  6 21:57:43 2025 daemon.info lora_pkt_fwd[5731]: DEBUG: [down] autoquit_cnt = 1
+Thu Nov  6 21:57:48 2025 daemon.info lora_pkt_fwd[5731]: DEBUG: [down] autoquit_cnt = 2
+Thu Nov  6 21:57:53 2025 daemon.info lora_pkt_fwd[5731]: DEBUG: [down] autoquit_cnt = 3
+Thu Nov  6 21:57:53 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 25 ms
+Thu Nov  6 21:57:58 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:03 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 21:58:08 UTC #####
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 0 (0 bytes)
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 0.00%
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (50.00% acknowledged)
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 32924448
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 31 C ###
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"31.0","rx_sum":0,"report_time":1762466288,"tx_sum":0}
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 21:58:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":0.0,"dwnb":0,"txnb":0,"temp":31}}
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 96 ms
+Thu Nov  6 21:58:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:13 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:24 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 21:58:29 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:34 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 21:58:38 UTC #####
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (121 bytes)
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 62976286
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 31 C ###
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"31.3","rx_sum":0,"report_time":1762466318,"tx_sum":0}
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 21:58:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":31}}
+Thu Nov  6 21:58:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 21:58:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:44 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:49 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 245 ms
+Thu Nov  6 21:58:54 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:58:59 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:04 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 21:59:08 UTC #####
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 93005141
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"31.6","rx_sum":0,"report_time":1762466348,"tx_sum":0}
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 21:59:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":31}}
+Thu Nov  6 21:59:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 21:59:10 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:15 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:20 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:25 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 21:59:30 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:35 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 21:59:38 UTC #####
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 123049645
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"31.8","rx_sum":0,"report_time":1762466378,"tx_sum":0}
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 21:59:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":31}}
+Thu Nov  6 21:59:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 21:59:40 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:45 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:50 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 21:59:55 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:01 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:00:06 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:00:08 UTC #####
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 153092532
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 33 C ###
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.9","rx_sum":0,"report_time":1762466408,"tx_sum":0}
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:00:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:00:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:00:11 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:16 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:21 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:26 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:31 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 3 ms
+Thu Nov  6 22:00:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:00:38 UTC #####
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 183138195
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.0","rx_sum":0,"report_time":1762466438,"tx_sum":0}
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:00:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:00:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:00:41 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:46 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:00:52 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:00:57 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:02 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:01:08 UTC #####
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 213163947
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466468,"tx_sum":0}
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:01:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:01:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 3 ms
+Thu Nov  6 22:01:12 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:22 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:27 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:01:38 UTC #####
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 243190112
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466498,"tx_sum":0}
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:01:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:01:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:01:43 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:48 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:53 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:01:58 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:03 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:02:08 UTC #####
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 5 (100.00% acknowledged)
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 273236180
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466528,"tx_sum":0}
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:02:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:02:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:02:13 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:02:23 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:28 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:34 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:02:38 UTC #####
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 303263978
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466558,"tx_sum":0}
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:02:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:02:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:02:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:44 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:49 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:02:54 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:02:59 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:04 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:03:08 UTC #####
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 333315510
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466588,"tx_sum":0}
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:03:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:03:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:03:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:14 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:20 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:03:25 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:03:30 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:35 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:03:38 UTC #####
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 363361065
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466618,"tx_sum":0}
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:03:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:03:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:03:40 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:03:45 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:50 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:03:55 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:00 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:05 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:04:08 UTC #####
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 393408328
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466648,"tx_sum":0}
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:04:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:04:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:04:11 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:04:16 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:21 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:04:26 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:31 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:04:38 UTC #####
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 423434678
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466678,"tx_sum":0}
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:04:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:04:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:04:41 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:04:46 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:51 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:04:56 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:02 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:05:08 UTC #####
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 453460819
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466708,"tx_sum":0}
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:05:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:05:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:05:12 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:05:22 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:27 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:05:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:05:38 UTC #####
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 483487261
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466738,"tx_sum":0}
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:05:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:05:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:05:42 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:47 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:05:53 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:05:58 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:03 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:06:08 UTC #####
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 513513442
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466768,"tx_sum":0}
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:06:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:06:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:06:13 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:06:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:23 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:28 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:06:33 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:06:38 UTC #####
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 5 (100.00% acknowledged)
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 543543905
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.1","rx_sum":0,"report_time":1762466798,"tx_sum":0}
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:06:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:06:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:44 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:49 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:54 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:06:59 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:04 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:07:08 UTC #####
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 573571556
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466828,"tx_sum":0}
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:07:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:07:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:07:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:14 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:19 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:24 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:30 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:07:35 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:07:38 UTC #####
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 603625892
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466858,"tx_sum":0}
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:07:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:07:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:07:40 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:07:45 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:50 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:07:55 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:00 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:08:05 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:08:08 UTC #####
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 633673805
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466888,"tx_sum":0}
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:08:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:08:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:08:10 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:08:15 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:08:21 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:26 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:31 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:08:38 UTC #####
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 663721356
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466918,"tx_sum":0}
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:08:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:08:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 1 ms
+Thu Nov  6 22:08:41 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:46 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:08:51 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:08:56 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:01 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:06 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:09:08 UTC #####
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 693763299
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466948,"tx_sum":0}
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:09:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:09:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:09:12 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:09:22 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:27 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:09:38 UTC #####
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 723806178
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762466978,"tx_sum":0}
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:09:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:09:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 4 ms
+Thu Nov  6 22:09:42 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:47 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:09:52 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:09:57 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:10:03 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:10:08 UTC #####
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 753854031
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467008,"tx_sum":0}
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:10:08 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:10:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:10:13 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:10:23 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:28 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:33 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:10:38 UTC #####
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 783880512
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:10:38 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:10:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467038,"tx_sum":0}
+Thu Nov  6 22:10:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:10:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:10:38 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:10:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:10:43 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:48 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:10:54 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:10:59 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:04 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:11:09 UTC #####
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 5 (100.00% acknowledged)
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 813927235
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467069,"tx_sum":0}
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:11:09 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:11:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:10 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 000000000000600000028888000033322E3D8408B6AB18
+Thu Nov  6 22:11:14 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 00000000000000000002888800003332228405F4668943
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] Join-Request from 2232330000888802
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 00000000000000000002888800003332228C05F4638943
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"rxpk":[{"jver":1,"tmst":822041321,"chan":0,"rfch":0,"freq":916.800000,"mid": 8,"stat":1,"modu":"LORA","datr":"SF9BW125","codr":"4/5","rssis":-104,"lsnr":-8.2,"foff":386,"rssi":-96,"size":23,"data":"AAAAAAAAAAAAAoiIAAAzMiKEBfRmiUM="}]}
+Thu Nov  6 22:11:17 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 9 ms
+Thu Nov  6 22:11:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_RESP received  - token[236:183] :)
+Thu Nov  6 22:11:18 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:18 2025 daemon.info lora_pkt_fwd[5731]: JSON down: {"txpk":{"imme":false,"rfch":0,"powe":27,"ant":0,"brd":0,"tmst":827041321,"tmms":null,"freq":923.3,"modu":"LORA","datr":"SF9BW500","codr":"4/5","fdev":null,"ncrc":null,"ipol":true,"prea":null,"size":17,"data":"IGj1Oi38lv8CCeH4s7ipkQk="}}
+Thu Nov  6 22:11:19 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:24 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:29 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:11:34 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:11:39 UTC #####
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 3
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 33.33%, CRC_FAIL: 66.67%, NO_CRC: 0.00%
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 1 (23 bytes)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 2 (371 bytes)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 1 (241 bytes)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 1 (17 bytes)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 843974480
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":3,"report_time":1762467099,"tx_sum":1}
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:11:39 UTC","rxnb":3,"rxok":1,"rxfw":1,"ackr":100.0,"dwnb":1,"txnb":1,"temp":32}}
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 1 ms
+Thu Nov  6 22:11:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:45 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:11:50 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:11:55 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:00 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:12:05 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:12:09 UTC #####
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 874022980
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467129,"tx_sum":0}
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:12:09 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:12:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:12:10 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:13 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 000000000080A4866EACC8488004379312DC65F9C2548F
+Thu Nov  6 22:12:15 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:20 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0030000900000000200288880000333222A850BA550782
+Thu Nov  6 22:12:20 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:12:25 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:30 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:12:39 UTC #####
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 2
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 904054015
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":2,"report_time":1762467159,"tx_sum":0}
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:12:39 UTC","rxnb":2,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:12:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:12:41 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:46 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:51 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:12:56 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:01 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:13:06 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:13:09 UTC #####
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 934077551
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467189,"tx_sum":0}
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:13:09 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:13:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:13:11 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:16 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:21 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:13:27 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 3 ms
+Thu Nov  6 22:13:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 000006000000000000028888000033362616A56CA14DF0
+Thu Nov  6 22:13:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:13:39 UTC #####
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 1
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 964130090
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":1,"report_time":1762467219,"tx_sum":0}
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:13:39 UTC","rxnb":1,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:13:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:13:42 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:47 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:52 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:13:57 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:02 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 00000C000000535C555288880000333222DBB974B0DACD
+Thu Nov  6 22:14:07 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:14:09 UTC #####
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 1
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 994157464
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":1,"report_time":1762467249,"tx_sum":0}
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:14:09 UTC","rxnb":1,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:14:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:14:12 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:14:18 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:23 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:14:28 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:33 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:38 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:14:39 UTC #####
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1024183942
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467279,"tx_sum":0}
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:14:39 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:14:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:14:42 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0015C355450433230201888800000302228A5424ED4E51
+Thu Nov  6 22:14:43 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:48 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:14:53 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:14:56 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 00004CC80008F31099328888000033322246E3A145CEC2
+Thu Nov  6 22:14:58 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:15:03 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:15:09 UTC #####
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 2
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1054231763
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":2,"report_time":1762467309,"tx_sum":0}
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:15:09 UTC","rxnb":2,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:15:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:15:14 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:19 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:24 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:29 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:34 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:15:39 UTC #####
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 5 (100.00% acknowledged)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1084259484
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467339,"tx_sum":0}
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:15:39 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:15:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:15:40 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 000000000000000000022D8E0C52333222C16E194C45F4
+Thu Nov  6 22:15:44 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:15:47 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 00CA0AA6660C0000000288880000333222A89DB6E3C3D4
+Thu Nov  6 22:15:49 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:15:55 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:00 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:16:01 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0053533567053000000288884004333222436DB82A2835
+Thu Nov  6 22:16:05 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:08 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0000060000000000000288880000B33AA6F93C107DEA0D
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:16:09 UTC #####
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 4
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1114286813
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":4,"report_time":1762467369,"tx_sum":0}
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:16:09 UTC","rxnb":4,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:16:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:16:10 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:16:15 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:20 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:25 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:30 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:35 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:36 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0031C6080000600008028188080033312E338A91552385
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:16:39 UTC #####
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 1
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1144334632
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":1,"report_time":1762467399,"tx_sum":0}
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:16:39 UTC","rxnb":1,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:16:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:16:40 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:46 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:51 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:16:56 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:01 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 495 ms
+Thu Nov  6 22:17:06 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:17:09 UTC #####
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 0.00%, NO_CRC: 0.00%
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1174359386
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":0,"report_time":1762467429,"tx_sum":0}
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:17:09 UTC","rxnb":0,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:17:09 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:17:11 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:16 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:21 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
+Thu Nov  6 22:17:25 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] payload (23 bytes): 0000000A00000000000288880000333224AC0FFCFA3DB7
+Thu Nov  6 22:17:26 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:32 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:37 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 2 ms
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ##### 2025-11-06 22:17:39 UTC #####
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### [UPSTREAM] ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets received by concentrator: 1
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # CRC_OK: 0.00%, CRC_FAIL: 100.00%, NO_CRC: 0.00%
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets forwarded: 0 (0 bytes)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA datagrams sent: 1 (123 bytes)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # PUSH_DATA acknowledged: 100.00%
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### [DOWNSTREAM] ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_DATA sent: 6 (100.00% acknowledged)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # PULL_RESP(onse) datagrams received: 0 (0 bytes)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # RF packets sent to concentrator: 0 (0 bytes)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # TX errors: 0
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision packet): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (collision beacon): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too late): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # TX rejected (too early): 0.00% (req:1, rej:0)
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### SX1302 Status ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (INST): 1204406562
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # SX1302 counter (PPS):  0
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON queued: 0
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON sent so far: 0
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # BEACON rejected: 0
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### [JIT] ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: #--------
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: src/jitqueue.c:434:jit_print_queue(): INFO: [jit] queue is empty
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### [GPS] ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: # GPS sync is disabled
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ### Concentrator temperature: 32 C ###
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: ##### END #####
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: {"state":1,"temperature":"32.2","rx_sum":1,"report_time":1762467459,"tx_sum":0}
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]:
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: JSON up: {"stat":{"time":"2025-11-06 22:17:39 UTC","rxnb":1,"rxok":0,"rxfw":0,"ackr":100.0,"dwnb":0,"txnb":0,"temp":32}}
+Thu Nov  6 22:17:39 2025 daemon.info lora_pkt_fwd[5731]: INFO: [up] PUSH_ACK received in 2 ms
+Thu Nov  6 22:17:42 2025 daemon.info lora_pkt_fwd[5731]: INFO: [down] PULL_ACK received in 1 ms
