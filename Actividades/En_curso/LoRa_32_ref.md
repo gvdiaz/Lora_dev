@@ -60,3 +60,8 @@ ESP32ChipID=...
 ESP32 Chip model = ESP32-S3 Rev 2
 ´´´
 7. Logré bajar la información y lo dejo en la pc del laburo disponible, no así en el repositorio.
+
+
+### Documentación completa
+
+Obtuve el chip ID y con ella el [LINK](https://resource.heltec.cn/download/WiFi_LoRa_32_V3) de donde bajar la información
