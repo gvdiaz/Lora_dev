@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# WiFi Credentianls
+Scripts/WiFi/Client_HT/arduino_secrets.h
+
 # C extensions
 *.so
 
