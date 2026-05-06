@@ -13,7 +13,7 @@ char ssid[] = SECRET_SSID;
 char pass[] = SECRET_PASS;
 
 WebServer server(80);
-const int ledPin = 13;
+const int ledPin = 35;
 const int buttonPin = 12;
 bool ledState = false;
 void setup() {
