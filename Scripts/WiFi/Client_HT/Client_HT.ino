@@ -9,8 +9,6 @@
 char ssid[] = SECRET_SSID;
 char pass[] = SECRET_PASS;
 
-// const char* ssid = "Telecentro-049d";
-// const char* password = "KM2ZXV2WXHUZ";
 void setup() {
 Serial.begin(115200);  delay(500);
   Serial.print(".");
