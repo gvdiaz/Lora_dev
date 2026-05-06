@@ -5,6 +5,7 @@ __pycache__/
 
 # WiFi Credentianls
 Scripts/WiFi/Client_HT/arduino_secrets.h
+Scripts/Web_server/Web_server/arduino_secrets.h
 
 # C extensions
 *.so
