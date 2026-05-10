@@ -10,8 +10,8 @@
 #include <Arduino_JSON.h>
 
 // Biblioteca para escritura en pantalla OLED de dispositivo
-#include "HT_SSD1306Wire.h"
 #include <Wire.h>
+#include "HT_SSD1306Wire.h"
 
 // Biblioteca para obtener credenciales
 #include "arduino_secrets.h"
@@ -75,6 +75,8 @@ void loop() {
         }
         Serial.print("JSON object = ");
         Serial.println(weatherData);
+        Serial.print("City: ");
+        Serial.println(weatherData["name"]);
         Serial.print("Temperature: ");
         Serial.println(weatherData["main"]["temp"]);
         Serial.print("Pressure: ");
@@ -86,13 +88,15 @@ void loop() {
         
         // display.clearDisplay();
         display.clear();
+        display.setTextAlignment(TEXT_ALIGN_RIGHT);
         // display.setTextSize(1);
         display.setFont(ArialMT_Plain_10);
         // display.setTextColor(SSD1306_WHITE);
         display.setColor(WHITE);
         // display.setCursor(0, 0);
         // En principio no defino donde comienzo a escribir, veré en la próxima vuelta si puedo definirlo
-        display.println("City: " + weatherData["sys"]["name"]);
+        display.print("\nCity: ");
+        display.println(weatherData["sys"]["name"]);
         display.print("\nTemperature: ");
         display.println(weatherData["main"]["temp"]);
         display.print("\nPressure: ");
