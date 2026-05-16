@@ -97,19 +97,13 @@ void loop() {
         Serial.println(weatherData["main"]["humidity"]);
         Serial.print("Wind Speed: ");
         Serial.println(weatherData["wind"]["speed"]);
-        
         // display.clearDisplay();
         display.clear();
         // display.setTextAlignment(TEXT_ALIGN_RIGHT);
-
         // display.setTextSize(1);
-
         // display.setFont(ArialMT_Plain_10);
-
         // display.setTextColor(SSD1306_WHITE);
-        
         // display.setColor(WHITE);
-        
         // display.setCursor(0, 0);
         // En principio no defino donde comienzo a escribir, veré en la próxima vuelta si puedo definirlo
         // display.print("\nCity: ");
